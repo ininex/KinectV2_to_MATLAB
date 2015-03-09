@@ -47,7 +47,7 @@ namespace KinectV2_to_MATLAB
         public MainWindow()
         {
             InitializeComponent();
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.pointClouds", true))
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", true))
             {
                 file.WriteLine("Working...");
             }
@@ -137,8 +137,8 @@ namespace KinectV2_to_MATLAB
         #region TXT FILE GENERATION
         void txtCreator(String line)
         {
-            System.IO.File.WriteAllText(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.pointClouds", String.Empty);
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.pointClouds", true))
+            System.IO.File.WriteAllText(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", String.Empty);
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", true))
             {
                 file.WriteLine(line);
             }

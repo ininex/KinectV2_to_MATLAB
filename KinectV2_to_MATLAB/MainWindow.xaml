@@ -1,9 +1,13 @@
 ﻿<Window x:Class="KinectV2_to_MATLAB.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Preview" Height="768" Width="1024">
+        Title="Preview" Height="768" Width="1024" Loaded="Window_Loaded" Closed="Window_Closed">
     <Grid>
         <Image Name="camera" />
         <Canvas Name="canvas" />
+        <Grid>
+            <StackPanel>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
