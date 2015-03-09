@@ -119,19 +119,7 @@ namespace KinectV2_to_MATLAB
                                     String lines_temp = String.Format("{0}, {1}, {2}" + Environment.NewLine, joint.Position.X.ToString(), joint.Position.Y.ToString(), joint.Position.Z.ToString());
                                     lines = lines + lines_temp;
                                 }
-                                /*
-                            {
-                                #region JointsLocsWriter
-                                using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", true))
-                                {
-                                    string lines = String.Format("{0}, {1}, {2}", joint.Position.X.ToString(), joint.Position.Y.ToString(), joint.Position.Z.ToString());
-                                    file.WriteLine(lines);
-                                }
-                            }
-                            #endregion
-                                 * */
 
-                                // Draw skeleton.
                                 if (_displayBody)
                                 {
                                     canvas.DrawSkeleton(body);
