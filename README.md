@@ -7,6 +7,7 @@ Steps to follow:
 4. Download MATLAB_Support folder to your MATLAB default folder under your document folder.
 5. Use JointsCloudSpliter.m function to view the imported points cloud.
 
-NOTE: 1. This the first version, it will be improved with automatically importing feature when I have time. 
+NOTE: 
+1. This the first version, it will be improved with automatically importing feature when I have time. 
 2. Now points cloud can only be imported manually by clicking the import button on the top of MATLAB menu. Then it is recommended to imported it as numberic matrix. Also, make sure you set up the rule of excluding the blank row.
 3. Reference: http://pterneas.com/2014/02/20/kinect-for-windows-version-2-color-depth-and-infrared-streams/
