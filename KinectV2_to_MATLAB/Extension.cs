@@ -1,4 +1,7 @@
-﻿using Microsoft.Kinect;
+﻿// Taking reference from : http://pterneas.com/2014/02/20/kinect-for-windows-version-2-color-depth-and-infrared-streams/
+// Improved by ininex, github link: https://github.com/ininex/KinectV2_to_MATLAB#kinectv2_to_matlab
+
+using Microsoft.Kinect;
 using System;
 using System.Collections.Generic;
 using System.Linq;

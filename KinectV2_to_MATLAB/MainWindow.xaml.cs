@@ -1,5 +1,5 @@
 ﻿// Taking reference from : http://pterneas.com/2014/02/20/kinect-for-windows-version-2-color-depth-and-infrared-streams/
-// Improved by Guanjiu Zhang (ininex)
+// Improved by ininex, github link: https://github.com/ininex/KinectV2_to_MATLAB#kinectv2_to_matlab
 
 using System;
 using System.Collections.Generic;
@@ -35,6 +35,8 @@ namespace KinectV2_to_MATLAB
         MultiSourceFrameReader _reader;
         IList<Body> _bodies;
         String lines = "";
+        String savepath = @"$MAKE SURE YOU ENTER YOUR DESIRED SAVING PATH HERE$\Joints_Locs.txt";
+        //Will be replaced by more user friendly input method in later update
         bool _displayBody = true;
 
         #endregion
@@ -47,7 +49,7 @@ namespace KinectV2_to_MATLAB
         public MainWindow()
         {
             InitializeComponent();
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", true))
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(savepath, true))// MAKE SURE YOU MODIFY THE savepath ABOVE!!!
             {
                 file.WriteLine("Working...");
             }
@@ -137,13 +139,14 @@ namespace KinectV2_to_MATLAB
         #region TXT FILE GENERATION
         void txtCreator(String line)
         {
-            System.IO.File.WriteAllText(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", String.Empty);
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", true))
+            System.IO.File.WriteAllText(savepath, String.Empty);
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(savepath, true))
             {
                 file.WriteLine(line);
             }
         }
         #endregion
+
     }
     public enum Mode
     {
