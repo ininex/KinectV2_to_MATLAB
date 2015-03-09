@@ -47,9 +47,9 @@ namespace KinectV2_to_MATLAB
         public MainWindow()
         {
             InitializeComponent();
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", true))
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.pointClouds", true))
             {
-                file.WriteLine("working...");
+                file.WriteLine("Working...");
             }
         }
 
