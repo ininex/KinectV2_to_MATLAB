@@ -4,8 +4,9 @@ Import Kinect V2 (New Sensor) Skeleton Joints Points Cloud to MATLAB for Further
 1. Download the KinectV2_to_MATLAB folder under KinectV2_to_MATLAB repository. MAKE SURE YOU HAVE VISUAL STUDIO 2013 TO COMPILE IT.
 2. Before running the project, MODIFY THIS LINE OR IT WILL NOT RUN: String savepath = @"$MAKE SURE YOU ENTER YOUR DESIRED SAVING PATH HERE$\Joints_Locs.txt"; Just replace "$MAKE SURE YOU ENTER YOUR DESIRED SAVING PATH HERE$" with the output joint coordinate path you want. THEN EVERYTHING WILL WORK.
 3. Plug in Kinect V2 for Windows, if all drivers have been installed, compile the project. It will detect the Kinect and present Color stream automatically. Make some gesture in front of the device and skeleton positions will be recorded.
-4. Download MATLAB_Support folder to your MATLAB default folder under your document folder.
-5. Use JointsCloudSpliter.m function to view the imported points cloud.
+4. Locate Joints_Locs.txt and import it using MATLAB built-in import feature. Import it as a numeric matrix. 
+5. Download MATLAB_Support folder to your MATLAB default folder under your document folder.
+6. Use JointsCloudSpliter.m function to view the imported points cloud.
 
 # NOTE: 
 1. This the first version, it will be improved with automatically importing feature when I have time. 
