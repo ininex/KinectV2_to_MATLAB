@@ -150,7 +150,7 @@ namespace KinectV2_to_MATLAB
         void txtCreator(String line)
         {
             System.IO.File.WriteAllText(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", String.Empty);
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.txt", true))
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\iNineX\Documents\MATLAB\KINECT V2 TEST\Joints_Locs.pointClouds", true))
             {
                 file.WriteLine(line);
             }
