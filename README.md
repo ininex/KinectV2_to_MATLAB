@@ -1,5 +1,7 @@
 # KinectV2_to_MATLAB
 Import Kinect V2 (New Sensor) Skeleton Joints Points Cloud to MATLAB for Further Analysis
+Explore more? Check my ChallengePost below:)
+http://challengepost.com/ininex?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav
 # Steps to follow:
 1. Download the KinectV2_to_MATLAB folder under KinectV2_to_MATLAB repository. MAKE SURE YOU HAVE VISUAL STUDIO 2013 TO COMPILE IT.
 2. Before running the project, MODIFY THIS LINE OR IT WILL NOT RUN: String savepath = @"$MAKE SURE YOU ENTER YOUR DESIRED SAVING PATH HERE$\Joints_Locs.txt"; Just replace "$MAKE SURE YOU ENTER YOUR DESIRED SAVING PATH HERE$" with the output joint coordinate path you want. THEN EVERYTHING WILL WORK.
