@@ -1,7 +1,7 @@
 # KinectV2_to_MATLAB
 Import Kinect V2 (New Sensor) Skeleton Joints Points Cloud to MATLAB for Further Analysis
 
-Want to explore more? Check my ChallengePost below:)
+Want to explore more? Check my ChallengePost here:) -->
 http://challengepost.com/ininex?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav
 # Steps to follow:
 1. Download the KinectV2_to_MATLAB folder under KinectV2_to_MATLAB repository. MAKE SURE YOU HAVE VISUAL STUDIO 2013 TO COMPILE IT.
